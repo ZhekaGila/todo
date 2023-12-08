@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="auth-wrapper" style="display: none;">
+         <h3>Authorization</h3>
+         <div class="auth-container">
+            <input type="text" class="auth-input auth-login" placeholder="username" required>
+            <input type="password" class="auth-input auth-password" placeholder="password" required>
+            <input type="submit" class="auth-submit" value="sign in">
+            <button class="open-reg">create account</button>
+            <p class="auth-warn" style="display: none;">Data are not correct</p>
+         </div>
+         <div class="reg-container" style="display: none;">
+            <input type="text" class="auth-input reg-login" placeholder="username" required>
+            <input type="password" class="auth-input reg-password" placeholder="password" required>
+            <input type="submit" class="reg-submit" value="sign in">
+            <p class="auth-warn reg-warn" style="display: none;">Data are not correct</p>
+         </div>
+      </div>
+      
+      
+      <div class="control-wrapper container" style="display: none;">
+         <button class="username">
+            <h3>username</h3>
+         </button>
+         <span class="control-container">
+            <button class="signout-btn">
+               <p>sign out</p>
+            </button>
+         </span>
+      </div>
+      
+      <div class="todo-wrapper container" style="display: none;">
+         <div class="item-container todo-container">
+            <p class="section-title">To do</p>
+            <div class="item-body todo-body">
+               <div class="todo-item"></div>
+               <div class="todo-item-container">
+                  <button class="todo-button todo-add-item">Add note</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="item-container inprogress-container">
+            <p class="section-title">In progress</p>
+            <div class="item-body in-progress-body">
+               <div class="inprogress-item">
+
+               </div>
+            </div>
+         </div>
+
+         <div class="item-container done-container">
+            <p class="section-title">Done</p>
+            <div class="item-body done-body">
+               <div class="done-item">
+
+               </div>
+            </div>
+         </div>
+         
+      </div>
+      
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="connect.js"></script>
+   <script src="scripts.js"></script>
+</body>
+</html>
